@@ -34,5 +34,6 @@ class TestOne(BaseClass):
         confirmPage.getSuccessBtn().click()
         textMatch = confirmPage.getSuccessAlert().text
         log.info("Text received from application is " + textMatch)
+        time.sleep(2)
 
         assert "Success! Thank you!" in textMatch
