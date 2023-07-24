@@ -35,5 +35,9 @@ class TestOne(BaseClass):
         textMatch = confirmPage.getSuccessAlert().text
         log.info("Text received from application is " + textMatch)
         time.sleep(2)
+        print("Maria")
+        print("Maria")
+        print("Maria")
+
 
         assert "Success! Thank you!" in textMatch
